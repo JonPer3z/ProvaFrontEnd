@@ -3,6 +3,7 @@ function calcular(){
     let element2 = document.getElementById("number2");
     let MultiplosDe5 = [];
     let NaoMultiplosDe5 = [];
+    // let saida = document.getElementById('output');
 
 
     if((element1 instanceof HTMLInputElement) && (element2 instanceof HTMLInputElement)){
@@ -14,8 +15,7 @@ function calcular(){
             for(let i = number1; i <= number2; i++){
                 if(i % 5 === 0){
                     MultiplosDe5.push(i);
-                    let tamanho = (MultiplosDe5.length);
-                    // exibirResultado(tamanho);
+                    let tamanho = MultiplosDe5.length;
                     console.log(tamanho);
                 }else{
                     NaoMultiplosDe5.push(i);
@@ -29,9 +29,7 @@ function calcular(){
     }   
 }
 
-// function exibirResultado(tamanho){
-//     document.getElementById("output"). = tamanho;
-// }
+// RESULTADO IMPRESSO NO CONSOLE.
 
-// SAIDA EM CONSOLE
+
 
